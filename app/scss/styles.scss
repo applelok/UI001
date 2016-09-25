@@ -1,0 +1,221 @@
+body{
+	background: black;
+}
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin);
+
+.container{
+	font-family: 'Libre Franklin', sans-serif;
+	width: 400px;
+	height: 550px;
+	margin: 0 auto;
+	background: #FFFAF5;
+	margin-top: 100px;
+	  .header{
+		background: #EBE4D5;
+		text-align: center;
+		padding-top: 20px;
+		height:24px;
+		overflow: hidden;
+		color: #957060;
+		font-weight: bold;
+		font-size: 20px;
+		#general-title{
+			height: 40px;
+		}
+		#detail-title{
+			
+			font-size: 20px;
+		}
+		.hidden-title{
+			// margin-top: -40px;
+			margin-top: -45px;
+			transition:all .3s;
+		}
+	  }
+  .dishes-bar{
+    min-height: 240px;
+    position: absolute;
+    margin: 0 auto;
+    width: inherit;
+    text-align: center;
+    overflow: hidden;
+    .dish-img{
+    	bottom: 0px;
+	    position: absolute;
+	    text-align: center;
+	    width: 100%;
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin: auto;
+
+    	img{
+    		height: 150px;
+    		width: 150px;
+			transition: all .3s ease-in-out; 
+		
+
+		 //  &:hover{
+		 //     transform: scale(0.5) ;		 
+		 // }
+  		}
+
+
+  		
+    }
+    .img-left{
+    	bottom: 0px;
+	    position: absolute;
+	    // text-align: center;
+	    width: 100%;
+	    display: block;
+	    position: absolute;
+	    // left: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin: auto;
+			// text-left;
+			text-align: left;
+		    left: -70px;
+		    top: 120px;
+		    
+			img{
+			    height: 100px ;
+    			width: 100px;
+			}
+	}
+	.img-right{
+		bottom: 0px;
+	    position: absolute;
+	    // text-align: center;
+	    width: 100%;
+	    display: block;
+	    position: absolute;
+	    // left: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin: auto;
+			// text-left;
+			text-align: right;
+		    right: -50px;
+		    top: 120px;
+		    
+			img{
+			    height: 100px;
+    			width: 100px;
+			}
+	}
+    .img-animation{
+  			transform: scale(0.7); 
+
+		 }
+  }
+  .cover{
+  	background: #EBE4D5;
+    min-height: 200px;
+  }
+  .dish-info{
+  	overflow: hidden;
+  	background: #FFFAF5;
+  	text-align: center;
+  	padding: 20px;
+  	margin: 0 auto;
+  	height: 365px;
+  	// #dish-brief{
+  	// 	height: 280px;
+  	// }
+	.dish-brief-appear{
+		opacity : 1; 
+		transition:all .3s;
+  		height: 340px !important; 
+	}
+  	.dish-brief-disappear{
+  		opacity : 0; transition:all .3s;
+  		height: 5px !important; 
+  		// transition:display .3s;
+  		// height: 0px; transition: height 3s;
+  		// transform: scale(1);
+  		// -webkit-transition: transform .3s ease-in-out;
+  	}
+
+  	// width: 400px;
+  	.dish-name{
+  		margin-top: 50px;
+  		font-size: 30px;
+  		color: #957060;
+  		font-weight: bold;
+
+  		// width: 00px;
+
+  	}
+  	.dish-desc{
+  		width: 80%;
+  		margin: 0 auto;
+
+  	}
+  	#dish-more{
+  		height: 30px;
+  		width: 100%;
+  		text-align: center;
+  		color: #00BCD4;
+  		font-weight: bold;
+  		font-size: 20px;
+  	}
+	#dish-details{
+		text-align: left;
+		#dish-details-name, #dish-details-method-title{
+			color: #00BCD4;//#B5DEE5;
+			text-transform: uppercase;
+			font-weight: bold;
+			height: 20px;
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		#dish-details-ingredients-part{
+			height: 180px;
+			.ingredients{
+				color: #957060;
+				font-size: 24px;
+				font-weight: bold;
+				height: 35px;
+				.name{
+					width:70%;
+					float: left;
+				}
+				.volume{
+					color: #9e9e9e;
+					font-size: 10px;
+					width:30%;
+					float: left;
+					text-transform: uppercase;
+				}
+			}
+
+		}
+		#dish-details-method-part{
+			height: 170px;
+			p{
+				color: #9e9e9e;
+			}
+		}
+		#dish-details-less{
+			text-align: center;
+	  		color: #B5DEE5;
+	  		font-weight: bold;
+	  		font-size: 20px;
+		}
+	}
+  }
+}
+
+// .grow { 
+//   height: 100px;
+//   width: 100px;
+//   background: red;
+//   transition: all .2s ease-in-out; 
+//   &:hover{
+//      transform: scale(0.5); 
+//   }
+// }
